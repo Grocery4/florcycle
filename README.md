@@ -54,14 +54,20 @@ To run the webapp `python3.12` and `pipenv` are necessary.
 pipenv install Pipfile
 ```
 
-3. once the installation is complete, to initialize the database, from the root directory run:
+3. once the required libraries are installed enter the virtual environment:
+
+```
+pipenv shell
+```
+
+4. to initialize the database, from the root directory run:
 
 ```
 > python3 project/manage.py makemigrations
 > python3 project/manage.py migrate
 ``` 
 
-4. finally:
+5. finally:
 
 ```
 python3 project/manage.py runserver
